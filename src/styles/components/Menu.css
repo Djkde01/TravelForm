@@ -6,6 +6,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  color: var(--light);
 }
 .header-menu--list {
   margin: 0;
@@ -16,12 +17,10 @@
   padding: 0;
 }
 .header-menu--item a {
-  color: var(--light);
-  text-transform: uppercase;
   text-decoration: none;
-  font-size: 18px;
   display: inline-block;
   padding: 0px 33px;
+  cursor: pointer;
 }
 .header-menu--item a:after {
   bottom: 0;

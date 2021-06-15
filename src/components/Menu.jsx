@@ -12,6 +12,7 @@ const Menu = () => {
   };
   return (
     <header className="header">
+      <strong>Travel Form</strong>
       <nav>
         <ul
           className={click ? "header-menu--list active" : "header-menu--list"}
