@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
 import data from "@assets/menuItems";
+import CurrentAirlineContext from "@context/CurrentAirlineContext";
 import "@styles/components/Menu.css";
 
 const Menu = () => {
   const [click, setClick] = useState(false);
+  const { airline, setAirline } = useContext(CurrentAirlineContext);
+
   const items = data.items;
 
-  const handleClick = () => {
+  const handleClick = (item) => {
+    setAirline(item);
     setClick(!click);
   };
   return (
@@ -21,7 +25,7 @@ const Menu = () => {
             <li
               key={item.id}
               className="header-menu--item"
-              onClick={handleClick}
+              onClick={() => handleClick(item.name)}
             >
               <a>{item.name}</a>
             </li>
