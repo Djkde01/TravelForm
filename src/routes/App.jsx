@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import InitialComponent from "@components/InitialComponent";
 import Menu from "@components/Menu";
 import "@styles/App.css";
+import Landing from "@components/Landing";
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <Switch>
         <Route exact path="/">
           <Menu />
-          <InitialComponent />
+          <Landing />
         </Route>
       </Switch>
     </BrowserRouter>

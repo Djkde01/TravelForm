@@ -1,0 +1,12 @@
+.landing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: fixed;
+  top: 100px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
